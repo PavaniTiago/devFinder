@@ -1,7 +1,7 @@
 import React from 'react'
-import { FaUserAlt } from 'react-icons/fa'
 import { MdPlace } from 'react-icons/md'
 import { BiLink } from 'react-icons/bi'
+import { FaUserAlt } from 'react-icons/fa'
 
 export const Pfp = (props) => {
   return (
@@ -9,7 +9,8 @@ export const Pfp = (props) => {
 
       <div className='flex flex-row mb-8 mt-2'>
         <div className='h-44 w-44 border-4 flex items-center border-stone-400 rounded-full'>
-            <img className='rounded-full py-1 px-1 m-auto' src={props.avatar} alt=""></img>
+            <img className='rounded-full py-1 px-1 m-auto' src={props.avatar}></img>
+            <FaUserAlt className='h-full w-full px-6 mr-1 text-zinc-900'/>
         </div>
         <div className='flex flex-col ml-6 justify-center'>
           <h2 className='text-white text-3xl font-bold mb-2'>{props.name}</h2>
